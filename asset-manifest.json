@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/nt-greek/static/css/main.cfe14a5d.chunk.css",
-    "main.js": "/nt-greek/static/js/main.58eb754d.chunk.js",
-    "main.js.map": "/nt-greek/static/js/main.58eb754d.chunk.js.map",
+    "main.css": "/nt-greek/static/css/main.5c3ed068.chunk.css",
+    "main.js": "/nt-greek/static/js/main.61fcd084.chunk.js",
+    "main.js.map": "/nt-greek/static/js/main.61fcd084.chunk.js.map",
     "runtime-main.js": "/nt-greek/static/js/runtime-main.3216e493.js",
     "runtime-main.js.map": "/nt-greek/static/js/runtime-main.3216e493.js.map",
     "static/css/2.dcbc423f.chunk.css": "/nt-greek/static/css/2.dcbc423f.chunk.css",
-    "static/js/2.adde7c63.chunk.js": "/nt-greek/static/js/2.adde7c63.chunk.js",
-    "static/js/2.adde7c63.chunk.js.map": "/nt-greek/static/js/2.adde7c63.chunk.js.map",
+    "static/js/2.74c9dd2e.chunk.js": "/nt-greek/static/js/2.74c9dd2e.chunk.js",
+    "static/js/2.74c9dd2e.chunk.js.map": "/nt-greek/static/js/2.74c9dd2e.chunk.js.map",
     "index.html": "/nt-greek/index.html",
-    "precache-manifest.ff81fecbd3f23a8d9efda2ae4cf461e8.js": "/nt-greek/precache-manifest.ff81fecbd3f23a8d9efda2ae4cf461e8.js",
+    "precache-manifest.b7a28dac1061b842de9992abd90b9f64.js": "/nt-greek/precache-manifest.b7a28dac1061b842de9992abd90b9f64.js",
     "service-worker.js": "/nt-greek/service-worker.js",
     "static/css/2.dcbc423f.chunk.css.map": "/nt-greek/static/css/2.dcbc423f.chunk.css.map",
-    "static/css/main.cfe14a5d.chunk.css.map": "/nt-greek/static/css/main.cfe14a5d.chunk.css.map",
-    "static/js/2.adde7c63.chunk.js.LICENSE.txt": "/nt-greek/static/js/2.adde7c63.chunk.js.LICENSE.txt",
+    "static/css/main.5c3ed068.chunk.css.map": "/nt-greek/static/css/main.5c3ed068.chunk.css.map",
+    "static/js/2.74c9dd2e.chunk.js.LICENSE.txt": "/nt-greek/static/js/2.74c9dd2e.chunk.js.LICENSE.txt",
     "static/media/adjectives_img.JPG": "/nt-greek/static/media/adjectives_img.370891cb.JPG",
     "static/media/alphabet_img.JPG": "/nt-greek/static/media/alphabet_img.d79c0efc.JPG",
     "static/media/article_img.JPG": "/nt-greek/static/media/article_img.3bec7132.JPG",
@@ -82,8 +82,8 @@
   "entrypoints": [
     "static/js/runtime-main.3216e493.js",
     "static/css/2.dcbc423f.chunk.css",
-    "static/js/2.adde7c63.chunk.js",
-    "static/css/main.cfe14a5d.chunk.css",
-    "static/js/main.58eb754d.chunk.js"
+    "static/js/2.74c9dd2e.chunk.js",
+    "static/css/main.5c3ed068.chunk.css",
+    "static/js/main.61fcd084.chunk.js"
   ]
 }
