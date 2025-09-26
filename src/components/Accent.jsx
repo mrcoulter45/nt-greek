@@ -16,7 +16,9 @@ function Accent() {
             src={ general_rules_of_accent_img }
             alt="general_rules_of_accent_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -26,7 +28,9 @@ function Accent() {
             src={ rule_of_verb_accent_img }
             alt="rule_of_verb_accent_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -36,7 +40,9 @@ function Accent() {
             src={ rule_of_noun_accent_img }
             alt="rule_of_noun_accent_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

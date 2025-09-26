@@ -19,7 +19,11 @@ function FirstDeclension() {
               src={ first_declension_perf_alpha_img }
               alt="first_declension_perf_alpha_img"
               style={{
-                width: '500px'
+                width: '500px',
+
+                maxWidth: '100%',
+
+                height: 'auto'
               }}
             />
           </div>
@@ -32,7 +36,11 @@ function FirstDeclension() {
               src={ first_declension_imperf_alpha_img }
               alt="first_declension_imperf_alpha_img"
               style={{
-                width: '500px'
+                width: '500px',
+
+                maxWidth: '100%',
+
+                height: 'auto'
               }}
             />
           </div>
@@ -45,7 +53,11 @@ function FirstDeclension() {
               src={ first_declension_perf_eta_img }
               alt="first_declension_perf_eta_img"
               style={{
-                width: '500px'
+                width: '500px',
+
+                maxWidth: '100%',
+
+                height: 'auto'
               }}
             />
           </div>

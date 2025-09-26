@@ -16,7 +16,9 @@ function ReflexivePronouns() {
             src={ reflexive_pronouns0_img }
             alt="reflexive_pronouns0_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -24,7 +26,9 @@ function ReflexivePronouns() {
             src={ reflexive_pronouns1_img }
             alt="reflexive_pronouns1_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -34,7 +38,9 @@ function ReflexivePronouns() {
             src={ reflexive_pronouns2_img }
             alt="reflexive_pronouns2_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

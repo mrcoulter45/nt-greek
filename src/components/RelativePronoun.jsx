@@ -20,7 +20,9 @@ function RelativePronoun() {
             src={ relative_pronoun_img }
             alt="relative_pronoun_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

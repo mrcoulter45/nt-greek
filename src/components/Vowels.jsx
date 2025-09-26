@@ -14,7 +14,9 @@ function Vowels() {
             src={ vowels_img }
             alt="vowels_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

@@ -15,7 +15,9 @@ function Numerals() {
             src={ numerals_img }
             alt="numerals_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -25,7 +27,9 @@ function Numerals() {
             src={ numerals_3_and4_img }
             alt="numerals_3_and4_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

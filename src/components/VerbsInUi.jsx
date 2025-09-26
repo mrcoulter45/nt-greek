@@ -19,7 +19,9 @@ function VerbsInUi() {
             src={ verbs_in_ui0 }
             alt="verbs_in_ui0"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -27,7 +29,9 @@ function VerbsInUi() {
             src={ verbs_in_ui1 }
             alt="verbs_in_ui1"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -37,7 +41,9 @@ function VerbsInUi() {
             src={ verbs_in_ui2 }
             alt="verbs_in_ui2"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -45,7 +51,9 @@ function VerbsInUi() {
             src={ verbs_in_ui3 }
             alt="verbs_in_ui3"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -55,7 +63,9 @@ function VerbsInUi() {
             src={ verbs_in_ui4 }
             alt="verbs_in_ui4"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -63,7 +73,9 @@ function VerbsInUi() {
             src={ verbs_in_ui5 }
             alt="verbs_in_ui5"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

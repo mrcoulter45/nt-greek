@@ -8,8 +8,15 @@
   border-style: solid;
   border-color: #384747;
   border-radius: 30px;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
 }
 .imageBorder {
   border-style: solid;
   border-color: #384747;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }

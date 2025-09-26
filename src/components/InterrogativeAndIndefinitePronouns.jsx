@@ -15,7 +15,9 @@ function InterrogativeAndIndefinitePronouns() {
             src={ interrogative_and_indefinite_pronouns0_img }
             alt="interrogative_and_indefinite_pronouns0_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -23,7 +25,9 @@ function InterrogativeAndIndefinitePronouns() {
             src={ interrogative_and_indefinite_pronouns1_img }
             alt="interrogative_and_indefinite_pronouns1_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

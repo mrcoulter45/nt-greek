@@ -14,7 +14,9 @@ function Verbs() {
             src={ verbs_img }
             alt="verbs_img"
             style={{
-              width: '1600px'
+              width: '1600px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

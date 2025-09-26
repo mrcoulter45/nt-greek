@@ -20,7 +20,11 @@ function SpecialWords() {
               src={ πιστεύω_img }
               alt="πιστεύω_img"
               style={{
-                width: '500px'
+                width: '500px',
+
+                maxWidth: '100%',
+
+                height: 'auto'
               }}
             />
           </div>
@@ -31,7 +35,11 @@ function SpecialWords() {
               src={ γράφω_second_aorist_passive_img }
               alt="γράφω_second_aorist_passive_img"
               style={{
-                width: '500px'
+                width: '500px',
+
+                maxWidth: '100%',
+
+                height: 'auto'
               }}
             />
           </div>
@@ -45,7 +53,11 @@ function SpecialWords() {
               src={ ἔρχομαι_img }
               alt="ἔρχομαι_img"
               style={{
-                width: '500px'
+                width: '500px',
+
+                maxWidth: '100%',
+
+                height: 'auto'
               }}
             />
             <p>2nd Aorist Active Indicative</p>
@@ -54,7 +66,11 @@ function SpecialWords() {
               src={ ἔρχομαι_2nd_aorist_active_ind_img }
               alt="ἔρχομαι_2nd_aorist_active_ind_img"
               style={{
-                width: '500px'
+                width: '500px',
+
+                maxWidth: '100%',
+
+                height: 'auto'
               }}
             />
           </div>

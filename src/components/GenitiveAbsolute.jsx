@@ -16,7 +16,9 @@ function GenitiveAbsolute() {
             src={ gen_abs }
             alt="gen_abs"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -26,7 +28,9 @@ function GenitiveAbsolute() {
             src={ gen_abs_ex0 }
             alt="gen_abs_ex0"
             style={{
-              width: '1500px'
+              width: '1500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -36,7 +40,9 @@ function GenitiveAbsolute() {
             src={ gen_abs_ex1 }
             alt="gen_abs_ex1"
             style={{
-              width: '1500px'
+              width: '1500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

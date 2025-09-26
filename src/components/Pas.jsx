@@ -15,7 +15,9 @@ function Pas() {
             src={ pas0_img }
             alt="pas0_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -23,7 +25,9 @@ function Pas() {
             src={ pas1_img }
             alt="pas1_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

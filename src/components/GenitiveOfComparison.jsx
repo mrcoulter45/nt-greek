@@ -14,7 +14,9 @@ function GenitiveOfComparison() {
             src={ genitive_of_comparison_img }
             alt="genitive_of_comparison_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

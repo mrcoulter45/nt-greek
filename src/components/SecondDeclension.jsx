@@ -18,7 +18,11 @@ function SecondDeclension() {
               src={ second_declension_masc_img }
               alt="second_declension_masc_img"
               style={{
-                width: '500px'
+                width: '500px',
+
+                maxWidth: '100%',
+
+                height: 'auto'
               }}
             />
           </div>
@@ -31,7 +35,11 @@ function SecondDeclension() {
               src={ second_declension_neuter_img }
               alt="second_declension_neuter_img"
               style={{
-                width: '500px'
+                width: '500px',
+
+                maxWidth: '100%',
+
+                height: 'auto'
               }}
             />
           </div>

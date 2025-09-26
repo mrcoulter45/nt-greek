@@ -20,7 +20,9 @@ function ThirdDeclension() {
             src={ third_declension_img }
             alt="third_declension_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -30,7 +32,9 @@ function ThirdDeclension() {
             src={ third_declension_ua_img }
             alt="third_declension_ua_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -40,7 +44,9 @@ function ThirdDeclension() {
             src={ third_declension0_img }
             alt="third_declension0_img"
             style={{
-              width: '490px'
+              width: '490px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -48,7 +54,9 @@ function ThirdDeclension() {
             src={ third_declension1_img }
             alt="third_declension1_img"
             style={{
-              width: '490px'
+              width: '490px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -56,7 +64,9 @@ function ThirdDeclension() {
             src={ third_declension2_img }
             alt="third_declension2_img"
             style={{
-              width: '490px'
+              width: '490px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -64,7 +74,9 @@ function ThirdDeclension() {
             src={ third_declension3_img }
             alt="third_declension3_img"
             style={{
-              width: '490px'
+              width: '490px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -72,7 +84,9 @@ function ThirdDeclension() {
             src={ third_declension4_img }
             alt="third_declension4_img"
             style={{
-              width: '490px'
+              width: '490px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

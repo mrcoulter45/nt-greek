@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
 import { ProSidebar, Menu, MenuItem } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import './App.css';
+import './components/Styles.css';
 
 // components
 import Home from './components/Home';

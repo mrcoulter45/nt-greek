@@ -16,7 +16,9 @@ function PersonalPronouns() {
             src={ personal_pronoun_1st_img }
             alt="personal_pronoun_1st_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -26,7 +28,9 @@ function PersonalPronouns() {
             src={ personal_pronoun_2nd_img }
             alt="personal_pronoun_2nd_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -36,7 +40,9 @@ function PersonalPronouns() {
             src={ personal_pronoun_3rd_img }
             alt="personal_pronoun_3rd_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

@@ -15,7 +15,9 @@ function Eiui() {
             src={ εἰμί_img }
             alt="εἰμί_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -25,7 +27,9 @@ function Eiui() {
             src={ εἰμί_present_active_participle_img }
             alt="εἰμί_present_active_participle_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

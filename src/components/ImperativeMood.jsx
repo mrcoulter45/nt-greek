@@ -23,7 +23,9 @@ function ImperativeMood() {
             src={ imperative_mood0_img }
             alt="imperative_mood0_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -33,7 +35,9 @@ function ImperativeMood() {
             src={ imperative_mood1_img }
             alt="imperative_mood1_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

@@ -18,7 +18,9 @@ function ContractVerbs() {
             src={ contraction0_img }
             alt="contraction0_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -28,7 +30,9 @@ function ContractVerbs() {
             src={ contraction1_img }
             alt="contraction1_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

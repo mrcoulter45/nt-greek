@@ -20,7 +20,9 @@ function Participles() {
             src={ participles0_img }
             alt="participles0_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -28,7 +30,9 @@ function Participles() {
             src={ participles1_img }
             alt="participles1_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -38,7 +42,9 @@ function Participles() {
             src={ participles2_img }
             alt="participles2_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -46,7 +52,9 @@ function Participles() {
             src={ participles4_img }
             alt="participles4_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -54,7 +62,9 @@ function Participles() {
             src={ participles3_img }
             alt="participles3_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
           <img
@@ -62,7 +72,9 @@ function Participles() {
             src={ participles5_img }
             alt="participles5_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
@@ -72,7 +84,9 @@ function Participles() {
             src={ participles6_img }
             alt="participles6_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>

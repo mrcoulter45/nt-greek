@@ -14,7 +14,9 @@ function Alphabet() {
             src={ alphabet_img }
             alt="alphabet_img"
             style={{
-              width: '500px'
+              width: '500px',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </Col>
