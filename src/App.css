@@ -93,19 +93,61 @@
 .sidebar-drawer {
   width: var(--sidebar-width);
   flex-shrink: 0;
-  background: #ffffff;
+  background: #131b2f;
+  color: #f1f5f9;
   border-right: 1px solid rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .sidebar-drawer .pro-sidebar {
   height: 100%;
   min-height: 100%;
+  width: 100% !important;
+  min-width: 100% !important;
 }
 
 .sidebar-drawer h3 {
   margin: 0;
+}
+
+.sidebar-drawer .pro-sidebar-inner {
+  background: transparent !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-drawer .pro-sidebar-inner .pro-sidebar-layout {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-drawer .pro-sidebar-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1.5rem;
+}
+
+.sidebar-drawer .pro-menu {
+  flex: 1 1 auto;
+}
+
+.sidebar-drawer .pro-menu-item > .pro-inner-item {
+  color: inherit;
+}
+
+.sidebar-drawer .pro-menu-item > .pro-inner-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+body.sidebar-open-lock {
+  overflow: hidden;
+  touch-action: none;
 }
 
 .app-content {
@@ -124,11 +166,6 @@
 @media (max-width: 992px) {
   :root {
     --header-height: 56px;
-  }
-
-  .app-shell.sidebar-open {
-    height: 100vh;
-    overflow: hidden;
   }
 
   .menu-toggle {
@@ -150,6 +187,7 @@
     box-shadow: 2px 0 12px rgba(0, 0, 0, 0.25);
     transform: translateX(-100%);
     transition: transform 0.3s ease;
+    border-right: none;
   }
 
   .sidebar-drawer.open {

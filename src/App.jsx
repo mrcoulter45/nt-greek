@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
 import { ProSidebar, Menu, MenuItem } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
@@ -42,6 +42,19 @@ import SpecialWords from './components/SpecialWords';
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+  useEffect(() => {
+    const body = document.body;
+    if (isSidebarOpen) {
+      body.classList.add('sidebar-open-lock');
+    } else {
+      body.classList.remove('sidebar-open-lock');
+    }
+
+    return () => {
+      body.classList.remove('sidebar-open-lock');
+    };
+  }, [isSidebarOpen]);
+
   const toggleSidebar = () => {
     setIsSidebarOpen((previousState) => !previousState);
   };
@@ -68,7 +81,7 @@ function App() {
             </span>
             <span className="sr-only">Toggle navigation</span>
           </button>
-          <h1 className="app-title">NT Greek0</h1>
+          <h1 className="app-title">NT Greek</h1>
         </header>
 
         <div className="app-body">
