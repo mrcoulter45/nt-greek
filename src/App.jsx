@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
+import React, { useEffect, useMemo, useState } from 'react';
+import { Route, BrowserRouter as Router, Switch, Link, useLocation } from 'react-router-dom';
 import { ProSidebar, Menu, MenuItem } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import './App.css';
@@ -39,8 +39,78 @@ import Conjunctions from './components/Conjunctions';
 import History from './components/History';
 import SpecialWords from './components/SpecialWords';
 
-function App() {
+const ROUTE_TITLES = {
+  '/': 'Home',
+  '/alphabet': 'Alphabet',
+  '/vowels': 'Vowels',
+  '/punctuation': 'Punctuation',
+  '/accent': 'Accent',
+  '/firstdeclension': 'First Declension',
+  '/seconddeclension': 'Second Declension',
+  '/thirddeclension': 'Third Declension',
+  '/adjectives': 'Adjectives',
+  '/article': 'Article',
+  '/personalpronouns': 'Personal Pronouns',
+  '/demonstrativeadjectives': 'Demonstrative Adjectives',
+  '/Demonstrativeadjectives': 'Demonstrative Adjectives',
+  '/εἰμί': 'εἰμί',
+  '/contractverbs': 'Contract Verbs',
+  '/futureliquidverbs': 'Future Liquid Verbs',
+  '/genitiveabsolute': 'Genitive Absolute',
+  '/genitiveofcomparison': 'Genitive of Comparison',
+  '/history': 'History',
+  '/imperativemood': 'Imperative Mood',
+  '/interrogativeandindefinitepronouns': 'Interrogative/Indefinite Pronouns',
+  '/nouns': 'Nouns',
+  '/numerals': 'Numerals',
+  '/participles': 'Participles',
+  '/pas': 'πᾶς',
+  '/prepositions': 'Prepositions',
+  '/reciprocalpronoun': 'Reciprocal Pronoun',
+  '/reflexivepronouns': 'Reflexive Pronouns',
+  '/relativepronoun': 'Relative Pronoun',
+  '/specialwords': 'Special Words',
+  '/verbs': 'Verbs',
+  '/verbsinui': 'Verbs In μι',
+  '/conjunctions': 'Conjunctions'
+};
+
+const getTitleForPath = (pathname) => {
+  if (!pathname) {
+    return ROUTE_TITLES['/'];
+  }
+
+  const normalized = decodeURIComponent(pathname.replace(/\/+$/, ''));
+  const effectivePath = normalized === '' ? '/' : normalized;
+
+  if (ROUTE_TITLES[effectivePath]) {
+    return ROUTE_TITLES[effectivePath];
+  }
+
+  const lowerCase = effectivePath.toLowerCase();
+  if (ROUTE_TITLES[lowerCase]) {
+    return ROUTE_TITLES[lowerCase];
+  }
+
+  const lastSegment = effectivePath.split('/').filter(Boolean).pop();
+  if (!lastSegment) {
+    return ROUTE_TITLES['/'];
+  }
+
+  return lastSegment
+    .split(/[-_]/)
+    .map((token) => token.charAt(0).toUpperCase() + token.slice(1))
+    .join(' ');
+};
+
+const AppShell = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const location = useLocation();
+
+  const currentSectionTitle = useMemo(
+    () => getTitleForPath(location.pathname),
+    [location.pathname]
+  );
 
   useEffect(() => {
     const body = document.body;
@@ -55,6 +125,10 @@ function App() {
     };
   }, [isSidebarOpen]);
 
+  useEffect(() => {
+    setIsSidebarOpen(false);
+  }, [location.pathname]);
+
   const toggleSidebar = () => {
     setIsSidebarOpen((previousState) => !previousState);
   };
@@ -64,30 +138,32 @@ function App() {
   };
 
   return (
-    <Router>
-      <div className={`app-shell ${isSidebarOpen ? 'sidebar-open' : ''}`}>
-        <header className="app-header">
-          <button
-            type="button"
-            className="menu-toggle"
-            onClick={toggleSidebar}
-            aria-label="Toggle navigation"
-            aria-expanded={isSidebarOpen}
-          >
-            <span className="menu-icon">
-              <span />
-              <span />
-              <span />
-            </span>
-            <span className="sr-only">Toggle navigation</span>
-          </button>
+    <div className={`app-shell ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+      <header className="app-header">
+        <button
+          type="button"
+          className="menu-toggle"
+          onClick={toggleSidebar}
+          aria-label="Toggle navigation"
+          aria-expanded={isSidebarOpen}
+        >
+          <span className="menu-icon">
+            <span />
+            <span />
+            <span />
+          </span>
+          <span className="sr-only">Toggle navigation</span>
+        </button>
+        <div className="header-titles">
           <h1 className="app-title">NT Greek</h1>
-        </header>
+          <p className="app-subtitle">{currentSectionTitle}</p>
+        </div>
+      </header>
 
-        <div className="app-body">
-          <aside className={`sidebar-drawer ${isSidebarOpen ? 'open' : ''}`}>
-            <ProSidebar>
-              <Menu iconShape="square">
+      <div className="app-body">
+        <aside className={`sidebar-drawer ${isSidebarOpen ? 'open' : ''}`}>
+          <ProSidebar>
+            <Menu iconShape="square">
                 <MenuItem onClick={closeSidebar}><h3>Home</h3> <Link to="/" /></MenuItem>
                 <MenuItem onClick={closeSidebar}>1st Declension <Link to="/firstdeclension" /></MenuItem>
                 <MenuItem onClick={closeSidebar}>2nd Declension <Link to="/seconddeclension" /></MenuItem>
@@ -98,7 +174,7 @@ function App() {
                 <MenuItem onClick={closeSidebar}>Article <Link to="/article" /></MenuItem>
                 <MenuItem onClick={closeSidebar}>Conjunctions <Link to="/conjunctions" /></MenuItem>
                 <MenuItem onClick={closeSidebar}>Contract Verbs <Link to="/contractverbs" /></MenuItem>
-                <MenuItem onClick={closeSidebar}>Demonstrative Adjectives <Link to="/Demonstrativeadjectives" /></MenuItem>
+                <MenuItem onClick={closeSidebar}>Demonstrative Adjectives <Link to="/demonstrativeadjectives" /></MenuItem>
                 <MenuItem onClick={closeSidebar}>εἰμί <Link to="/εἰμί" /></MenuItem>
                 <MenuItem onClick={closeSidebar}>Future Liquid Verbs <Link to="/futureliquidverbs" /></MenuItem>
                 <MenuItem onClick={closeSidebar}>Genitive Absolute <Link to="/genitiveabsolute" /></MenuItem>
@@ -120,12 +196,12 @@ function App() {
                 <MenuItem onClick={closeSidebar}>Verbs <Link to="/verbs" /></MenuItem>
                 <MenuItem onClick={closeSidebar}>Verbs In μι <Link to="/verbsinui" /></MenuItem>
                 <MenuItem onClick={closeSidebar}>Vowels <Link to="/vowels" /></MenuItem>
-              </Menu>
-            </ProSidebar>
-          </aside>
+            </Menu>
+          </ProSidebar>
+        </aside>
 
-          <main className="app-content">
-            <Switch>
+        <main className="app-content">
+          <Switch>
               <Route exact path="/">
                 <Home />
               </Route>
@@ -222,14 +298,21 @@ function App() {
               <Route exact path="/specialwords">
                 <SpecialWords />
               </Route>
-            </Switch>
-          </main>
-        </div>
-
-        {isSidebarOpen && (
-          <div className="sidebar-backdrop" onClick={closeSidebar} role="presentation" />
-        )}
+          </Switch>
+        </main>
       </div>
+
+      {isSidebarOpen && (
+        <div className="sidebar-backdrop" onClick={closeSidebar} role="presentation" />
+      )}
+    </div>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <AppShell />
     </Router>
   );
 }

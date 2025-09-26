@@ -32,6 +32,24 @@
   letter-spacing: 0.03em;
 }
 
+.header-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.app-subtitle {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.2;
+  word-break: break-word;
+}
+
 .menu-toggle {
   display: none;
   align-items: center;
@@ -100,6 +118,7 @@
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 .sidebar-drawer .pro-sidebar {
@@ -130,11 +149,13 @@
   flex: 1 1 auto;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 1.5rem;
+  padding-bottom: calc(3.5rem + env(safe-area-inset-bottom, 16px));
+  scroll-padding-bottom: calc(3.5rem + env(safe-area-inset-bottom, 16px));
 }
 
 .sidebar-drawer .pro-menu {
   flex: 1 1 auto;
+  padding-bottom: 0.5rem;
 }
 
 .sidebar-drawer .pro-menu-item > .pro-inner-item {
@@ -147,7 +168,7 @@
 
 body.sidebar-open-lock {
   overflow: hidden;
-  touch-action: none;
+  touch-action: pan-y;
 }
 
 .app-content {
@@ -217,5 +238,9 @@ body.sidebar-open-lock {
 
   .app-title {
     font-size: 1.1rem;
+  }
+
+  .app-subtitle {
+    font-size: 0.78rem;
   }
 }
